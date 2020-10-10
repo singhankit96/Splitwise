@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Splitwise</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="maxheap.js"></script>
+    <script src="index.js" type="module"></script>
+</head>
+<body style="background-color: rgb(139,22,248)">
+	<nav class="navbar navbar-light" style="font-size: 25px;font-family: sans-serif;background-color: rgb(21,155,245);">
+
+    	<img src="projImg.jpg" width="124" height="45" class="d-inline-block align-top" alt="">
+    	<font size="6" face="verdana" color="#f2f7f7">Cash Settlement Project </font>
+	</nav>
+	<div id="container">
+		<div id="mynetwork"></div>
+		<div id="container2">
+			<span id="temptext" style="width: 100%; text-align: center;font-size: x-large">
+				Click on solve to get solution
+			</span>
+			<div id="mynetwork2" style="display: none"></div>
+		</div>
+	</div>
+
+	<div>
+		<br>
+		<button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
+		<br>
+		<button type="button" class="btn btn-success" id="solve">Solve</button>
+	</div>
+
+</body>
+</html>
